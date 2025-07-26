@@ -1,16 +1,32 @@
 function toggleMenu() {
-  document.getElementById("dropdownMenu").classList.toggle("active");
+  var menu = document.getElementById("dropdownMenu");
+  if (menu) {
+    menu.classList.toggle("active");
+  }
 }
 
-document.getElementById('searchBtn').onclick = function() {
-  document.getElementById('searchModal').style.display = 'flex';
-  document.querySelector('#searchModal input').focus();
-};
-document.getElementById('closeSearch').onclick = function() {
-  document.getElementById('searchModal').style.display = 'none';
-};
-document.getElementById('searchModal').onclick = function(e) {
-  if (e.target === this) this.style.display = 'none';
-};
+var searchBtn = document.getElementById('searchBtn');
+var searchModal = document.getElementById('searchModal');
+var closeSearch = document.getElementById('closeSearch');
+
+if (searchBtn && searchModal) {
+  searchBtn.onclick = function() {
+    searchModal.style.display = 'flex';
+    var input = searchModal.querySelector('input');
+    if (input) input.focus();
+  };
+}
+
+if (closeSearch && searchModal) {
+  closeSearch.onclick = function() {
+    searchModal.style.display = 'none';
+  };
+}
+
+if (searchModal) {
+  searchModal.onclick = function(e) {
+    if (e.target === this) this.style.display = 'none';
+  };
+}
 
 
