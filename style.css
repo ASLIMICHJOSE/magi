@@ -9,6 +9,9 @@ body {
   background: #f6f6f6;
   color: #222;
 }
+margin{
+  border radius :10px;
+}
 
 header {
   display: flex;
