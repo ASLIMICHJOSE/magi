@@ -51,7 +51,7 @@ images.forEach((_, i) => {
   });
   dotsContainer.appendChild(dot);
 });
-
+// function update varosal
 function updateCarousel() {
   track.style.transform = `translateX(-${index * itemWidth}px)`;
   updateDots();
@@ -124,3 +124,4 @@ window.addEventListener('resize', () => {
 // Init
 updateCarousel();
 startAutoPlay();
+
