@@ -4,7 +4,7 @@ function toggleMenu() {
     menu.classList.toggle("active");
   }
 }
-
+//search bar
 var searchBtn = document.getElementById('searchBtn');
 var searchModal = document.getElementById('searchModal');
 var closeSearch = document.getElementById('closeSearch');
@@ -124,4 +124,5 @@ window.addEventListener('resize', () => {
 // Init
 updateCarousel();
 startAutoPlay();
+
 
