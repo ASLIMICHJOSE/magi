@@ -16,7 +16,7 @@ if (searchBtn && searchModal) {
     if (input) input.focus();
   };
 }
-
+. 
 if (closeSearch && searchModal) {
   closeSearch.onclick = function() {
     searchModal.style.display = 'none';
@@ -124,5 +124,6 @@ window.addEventListener('resize', () => {
 // Init
 updateCarousel();
 startAutoPlay();
+
 
 
